@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77C37F011E5969E5001CE5C5 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C37F001E5969E5001CE5C5 /* VideoVC.swift */; };
 		77E756081E58E2B40087B5AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E756071E58E2B40087B5AF /* AppDelegate.swift */; };
-		77E7560A1E58E2B40087B5AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E756091E58E2B40087B5AF /* ViewController.swift */; };
+		77E7560A1E58E2B40087B5AF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E756091E58E2B40087B5AF /* MainVC.swift */; };
 		77E7560D1E58E2B40087B5AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E7560B1E58E2B40087B5AF /* Main.storyboard */; };
 		77E7560F1E58E2B40087B5AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E7560E1E58E2B40087B5AF /* Assets.xcassets */; };
 		77E756121E58E2B40087B5AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E756101E58E2B40087B5AF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77C37F001E5969E5001CE5C5 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		77E756041E58E2B40087B5AF /* PartyRockAppDEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockAppDEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E756071E58E2B40087B5AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77E756091E58E2B40087B5AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77E756091E58E2B40087B5AF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		77E7560C1E58E2B40087B5AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77E7560E1E58E2B40087B5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77E756111E58E2B40087B5AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77C37EFD1E58E562001CE5C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77E756091E58E2B40087B5AF /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		77C37EFE1E58E583001CE5C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		77C37EFF1E58E58A001CE5C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		77E755FB1E58E2B40087B5AF = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +78,15 @@
 		77E756061E58E2B40087B5AF /* PartyRockAppDEV */ = {
 			isa = PBXGroup;
 			children = (
+				77C37EFF1E58E58A001CE5C5 /* Model */,
+				77C37EFE1E58E583001CE5C5 /* View */,
+				77C37EFD1E58E562001CE5C5 /* Controller */,
 				77E756071E58E2B40087B5AF /* AppDelegate.swift */,
-				77E756091E58E2B40087B5AF /* ViewController.swift */,
+				77E756101E58E2B40087B5AF /* LaunchScreen.storyboard */,
 				77E7560B1E58E2B40087B5AF /* Main.storyboard */,
 				77E7560E1E58E2B40087B5AF /* Assets.xcassets */,
-				77E756101E58E2B40087B5AF /* LaunchScreen.storyboard */,
 				77E756131E58E2B40087B5AF /* Info.plist */,
+				77C37F001E5969E5001CE5C5 /* VideoVC.swift */,
 			);
 			path = PartyRockAppDEV;
 			sourceTree = "<group>";
@@ -136,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77E7560A1E58E2B40087B5AF /* ViewController.swift in Sources */,
+				77C37F011E5969E5001CE5C5 /* VideoVC.swift in Sources */,
+				77E7560A1E58E2B40087B5AF /* MainVC.swift in Sources */,
 				77E756081E58E2B40087B5AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +325,7 @@
 				77E756181E58E2B40087B5AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
