@@ -68,7 +68,7 @@
                                 <rect key="frame" x="0.0" y="203" width="375" height="464"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="78" id="LSq-9m-MsE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="78" id="LSq-9m-MsE" customClass="PartyCell" customModule="PartyRockAppDEV" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="78"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LSq-9m-MsE" id="fRk-fb-tcS">
@@ -100,6 +100,11 @@
                                                 <constraint firstItem="dub-AL-eoY" firstAttribute="centerY" secondItem="fRk-fb-tcS" secondAttribute="centerY" id="wNS-Vz-IU8"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="PartyCell"/>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="dub-AL-eoY" id="uCV-3Z-ydf"/>
+                                            <outlet property="videoTitle" destination="F90-fZ-YU3" id="HIj-0w-tJj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -120,12 +125,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="NGY-VL-Yoh" id="Jl3-p9-Ahn"/>
                         <segue destination="xHo-vc-MhY" kind="showDetail" identifier="VideoVC" id="zym-rO-YUh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-222" y="-412"/>
+            <point key="canvasLocation" x="-710" y="-479"/>
         </scene>
         <!--VideoVC-->
         <scene sceneID="v1N-Bk-eZ5">
